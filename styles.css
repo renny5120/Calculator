@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 540px;
+    width: 540px;
+    gap: 10px;
+    padding: 10px;
+    background-color: azure;
+    font-size: 35px;
+    border: 10px solid rgb(255, 234, 115);
+
+}
+.display{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.numbers{
+
+}
