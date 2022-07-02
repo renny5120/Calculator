@@ -1,32 +1,69 @@
 body{
     display: flex;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
+
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 540px;
+    height: 440px;
     width: 540px;
     gap: 10px;
     padding: 10px;
     background-color: azure;
-    font-size: 35px;
+    font-size: 25px;
     border: 10px solid rgb(255, 234, 115);
 
 }
 .display{
     display: flex;
     flex-direction: row-reverse;
+    background-color: rgb(196, 238, 255);
+    font-size: 30px;
+    padding: 10px;
 }
 .buttons{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
-.numbers{
+    justify-content: space-evenly;
 
+    gap: 10px;
+    background-color: azure;
+    flex-grow: 1;
 }
+.numbers, .operators{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: rgb(196, 238, 255);
+    padding: 10px;
+    gap: 5px;
+}
+
+.operators{
+}
+
+.numbers>div, .operators>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-grow: 10;
+}
+
+.operators>div{
+    height: 110px;
+    width: 95px;
+}
+
+
