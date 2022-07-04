@@ -78,6 +78,7 @@ operators.forEach((div) => {
                 savedNum = '';
                 return;
             }
+            // evaluates new number
             displayNum = operate(savedOp, Number(savedNum), Number(displayNum));
             console.log(displayNum);
             display.textContent = displayNum;

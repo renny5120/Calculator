@@ -1,14 +1,13 @@
-body{
+body {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     height: 440px;
@@ -20,7 +19,8 @@ body{
     border: 10px solid rgb(255, 234, 115);
 
 }
-.display{
+
+.display {
     display: flex;
     flex-direction: row-reverse;
     justify-items: center;
@@ -30,16 +30,21 @@ body{
     padding: 10px;
     height: 70px;
     overflow: hidden;
+
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: center;
     align-items: space-around;
     gap: 10px;
     background-color: azure;
     flex-grow: 1;
+
 }
-.numbers, .operators{
+
+.numbers,
+.operators {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -48,12 +53,11 @@ body{
     background-color: rgb(196, 238, 255);
     padding: 10px;
     gap: 5px;
+
 }
 
-.operators{
-}
-
-.numbers>div, .operators>div{
+.numbers>div,
+.operators>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +67,11 @@ body{
     align-self: center;
     flex-wrap: wrap;
     flex-grow: 10;
+
 }
 
-.operators>div{
+.operators>div {
     height: 110px;
     width: 95px;
+    
 }
-
-
