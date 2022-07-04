@@ -11,7 +11,7 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-    return a / b;
+    return +(a / b).toFixed(2);
 }
 
 function operate(op, a, b) {
@@ -68,7 +68,16 @@ operators.forEach((div) => {
         let operation = e.target.innerText;
         clearDisplay = true;
 
+        // evaluates numbers and operators
         if(savedOp != '' && savedNum != ''){
+            // if user divides by 0
+            if(savedOp == '/' && displayNum == 0){
+                displayNum = "DON'T DIVIDE BY ZERO! >:C";
+                display.textContent = displayNum;
+                savedOp = '';
+                savedNum = '';
+                return;
+            }
             displayNum = operate(savedOp, Number(savedNum), Number(displayNum));
             console.log(displayNum);
             display.textContent = displayNum;
