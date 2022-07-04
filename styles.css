@@ -23,14 +23,18 @@ body{
 .display{
     display: flex;
     flex-direction: row-reverse;
+    justify-items: center;
+    align-items: center;
     background-color: rgb(196, 238, 255);
     font-size: 30px;
     padding: 10px;
+    height: 70px;
+    overflow: hidden;
 }
 .buttons{
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    align-items: space-around;
     gap: 10px;
     background-color: azure;
     flex-grow: 1;
